@@ -139,8 +139,8 @@ func (p *PumpFunLaunchpad) ParseMigrate(tx *rpc.GetTransactionResult) (domain.To
 
 		result.Mint = accountKeys[int(ix.Accounts[2])].String()
 		result.QuoteMint = accountKeys[int(ix.Accounts[3])].String()
-		result.BondingCurve = accountKeys[int(ix.Accounts[7])].String()
-		result.Creator = accountKeys[int(ix.Accounts[10])].String()
+		result.BondingCurve = accountKeys[int(ix.Accounts[4])].String()
+		result.Creator = accountKeys[int(ix.Accounts[7])].String()
 		result.NewPool = accountKeys[int(ix.Accounts[10])].String()
 		return result, nil
 	}
